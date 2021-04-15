@@ -1,0 +1,57 @@
+.tableau{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 50vh;
+}
+.liste{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(214, 214, 214);
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+}
+.liste:hover{
+    cursor: pointer;
+    transform: translateX(25px);
+    transition: ease-in-out 500ms;    
+}
+.liste span:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   left: 0;
+   background-color:rgb(34, 34, 78);
+   color: white;
+   height: 100%;
+   width: 30px;
+   border-top-left-radius: 5px ;
+   border-bottom-left-radius: 5px ;
+}
+.liste span:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   right: 0;
+   background-color:#9e2121;
+   color: white;
+   height: 100%;
+   width: 50px;
+   border-top-right-radius: 5px ;
+   border-bottom-right-radius: 5px ;
+}
+.guitareSelectionnee{
+    background-color: rgb(168, 106, 106);
+}
+.guitareNonSelectionnee{
+    opacity: 0.8;
+}

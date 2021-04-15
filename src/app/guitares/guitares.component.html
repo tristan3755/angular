@@ -1,0 +1,8 @@
+<h2>Les guitares</h2>
+<ul class="tableau">
+    <li class="liste" *ngFor="let instru of getGuitare()" [class.guitareSelectionnee]="instru===selectedInstru" [class.guitareNonSelectionnee]="instru!==selectedInstru" (click)="selection(instru)">
+      <span>{{instru.id}}</span> <span>{{instru.name}}</span><span>{{instru.prix}}</span>
+    </li>
+  </ul>
+  <app-guitare-details [guitare]="selectedInstru"></app-guitare-details>
+  
